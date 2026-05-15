@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 — AssemblyFactory</title>
-  <meta name="description" content="Page not found." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%99%EF%B8%8F</text></svg>" />
+  <title>Assembly Factory</title>
+  <meta name="description" content="Assembly Factory — building things" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%99%EF%B8%8F</text></svg>" />
   <style>
     :root {
       --bg: #0b0d10;
@@ -14,8 +16,18 @@
       --accent: #739916;
       --border: #27272a;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background: var(--bg);
@@ -26,39 +38,44 @@
       flex-direction: column;
       min-height: 100vh;
     }
-    header, main, footer {
+
+    header,
+    main,
+    footer {
       width: 100%;
       max-width: 720px;
       margin: 0 auto;
       padding: 0 1.5rem;
     }
+
     header {
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
       border-bottom: 1px solid var(--border);
     }
+
     .logo {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: 1.5rem;
+      font-weight: 800;
       letter-spacing: -0.01em;
     }
-    .logo a {
-      color: inherit;
-      text-decoration: none;
+
+    .logo span {
+      color: var(--accent);
     }
-    .logo span { color: var(--accent); }
+
+    .logo img {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 0.75rem;
+    }
+
     main {
       flex: 1;
       padding-top: 4rem;
       padding-bottom: 4rem;
     }
-    .code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      color: var(--accent);
-      font-size: 0.95rem;
-      letter-spacing: 0.05em;
-      margin-bottom: 1rem;
-    }
+
     h1 {
       font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 700;
@@ -66,12 +83,14 @@
       line-height: 1.15;
       margin-bottom: 1.25rem;
     }
+
     .lede {
       font-size: 1.15rem;
       color: var(--muted);
       margin-bottom: 2.5rem;
       max-width: 36rem;
     }
+
     .cta {
       display: inline-block;
       padding: 0.7rem 1.25rem;
@@ -82,7 +101,11 @@
       font-weight: 500;
       transition: opacity 0.15s ease;
     }
-    .cta:hover { opacity: 0.85; }
+
+    .cta:hover {
+      opacity: 0.85;
+    }
+
     footer {
       padding-top: 2rem;
       padding-bottom: 2rem;
@@ -94,13 +117,21 @@
       flex-wrap: wrap;
       gap: 0.5rem;
     }
-    footer a { color: var(--muted); text-decoration: none; }
-    footer a:hover { color: var(--fg); }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--fg);
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="logo"><a href="/">Assembly<span>Factory</span></a></div>
+    <div class="logo"><img src="af_logo.svg">ASSEMBLY FACTORY</div>
   </header>
 
   <main>
@@ -113,8 +144,11 @@
   </main>
 
   <footer>
-    <span>&copy; <script>document.write(new Date().getFullYear())</script> AssemblyFactory LLC</span>
+    <span>&copy;
+      <script>document.write(new Date().getFullYear())</script> AssemblyFactory LLC
+    </span>
     <a href="mailto:hello@assemblyfactory.com">hello@assemblyfactory.com</a>
   </footer>
 </body>
+
 </html>
